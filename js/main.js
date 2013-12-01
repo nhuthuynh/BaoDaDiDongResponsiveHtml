@@ -3,5 +3,6 @@
         var $carousel = $(this);
         console.log($carousel.data());
         $carousel.carousel($carousel.data());
-    })
+    });
+
 });
