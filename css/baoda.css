@@ -12,7 +12,8 @@ body {
 }
 
     body > .container {
-        padding-bottom: 50px;
+        margin-top: 31px;
+		padding-bottom: 50px;
     }
 
 .container {
