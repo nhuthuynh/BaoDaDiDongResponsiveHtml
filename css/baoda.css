@@ -555,6 +555,19 @@ ul {
     font-weight: bold;
 }
 
+.pro-price .with-discount {
+    text-decoration: line-through;
+}
+
+.pro-price .with-discount sup
+{
+    text-decoration: none;
+}
+
+.pro-price .promo-price:before {
+    margin: 4px 5px;
+}
+
 .pro-detail .pro-intro {
     margin-bottom: 25px;
 }
@@ -656,6 +669,7 @@ ul {
 
 .pro-img-slideshow .img-container {
     height: 205px;
+    overflow: hidden;
     position: relative;
 }
 
