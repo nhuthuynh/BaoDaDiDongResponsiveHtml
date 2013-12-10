@@ -79,11 +79,26 @@ ul {
 }
 
 .nav-top > li > .menuItem {
+    background-color: transparent;
     border-left: 1px solid #89cbc9;
     font-size: 1.25em;
     margin: 0;
     padding: 0 30px 0 10px;
     text-transform: uppercase;
+}
+
+.nav .open > .menuItem, .nav .open > .menuItem:hover, .nav .open > .menuItem:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav .open > .menuItem {
+    border-color: #89cbc9;
+}
+
+.nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
 }
 
 /* Icons */
@@ -284,12 +299,16 @@ ul {
     .pro-box .pro-name {
         font-size: 1.45em;
         font-weight: bold;
+        height: 45px;
         letter-spacing: .5px;
         margin: 5px 0 20px 0;
+        overflow: hidden;
     }
 
     .pro-box .pro-img {
+        height: 142px;
         margin: 0 auto;
+        width: 188px;
     }
 
     .pro-box .pro-link {
@@ -674,6 +693,7 @@ ul {
 }
 
 .pro-img-slideshow .pro-img {
+    height: 205px;
     left: 0;
     opacity: 0;
     margin: 0 auto;
@@ -686,7 +706,7 @@ ul {
     -webkit-transition: opacity .5s ease;
     transition: opacity .5s ease;
     top:10px;
-    width: 100%
+    width: 242px;
 }
 
 .pro-img-slideshow .pro-img:target {

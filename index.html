@@ -21,10 +21,20 @@
         </div>
     </div>
     <div class="container">
-        <header id="header">
+        <header id="header" role="navigation">
             <ul class="nav navbar-nav nav-top">
                 <li><a class="menuItem" href="#">Trang chủ</a></li>
-                <li><a class="menuItem" href="#">sản phẩm</a></li>
+                <li><a class="menuItem dropdown-toggle" data-toggle="dropdown" href="#">sản phẩm <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Apple iPad</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Apple iPhone</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Samsung Galaxy</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Samsung Note</a></li>
+                    </ul>
+                </li>
                 <li><a class="menuItem" href="#">thương hiệu</a></li>
                 <li><a class="menuItem" href="#">giới thiệu</a></li>
                 <li><a class="menuItem" href="#">hướng dẫn</a></li>
@@ -364,8 +374,7 @@
         </footer>
     </div>
     <script src="js/jquery-1.9.1.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
