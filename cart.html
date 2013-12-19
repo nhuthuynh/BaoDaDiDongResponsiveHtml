@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bao Da Chi Tiết</title>
+    <title>Bao Da Giỏ Hàng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/baoda.css" rel="stylesheet" media="screen">
@@ -71,75 +71,76 @@
                 </div>
                 <h2 class="carousel-title carousel-bg-title corner-bottom">Đẹp một cách <span class="upper">đẳng cấp</span></h2>
             </section>
-            <div class="row pro-list-container">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 pro-detail">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pro-img-slideshow">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="img-container">
-                                        <img id="img1" class="pro-img default" src="img/img-slide-show.jpg"
-                                            alt="" />
-                                        <img id="img2" class="pro-img" src="img/img-slide-show2.jpg" alt="" />
-                                        <img id="img3" class="pro-img" src="img/img-slide-show3.jpg" alt="" />
-                                    </div>
+            <div class="row cart-container">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 cart-detail">
+                    <h3 class="title-page">
+                        Giỏ hàng</h3>
+                    <p>
+                        Giỏ hàng – các sản phẩm phụ kiện đã chọn lựa, bạn cần xem lại chính xác các sản
+                        phẩm muốn mua trước khi thực hiện bước thanh toán.</p>
+                    <div class="table-responsive seperate-top">
+                        <table class="table table-striped item-list">
+                            <tr>
+                                <th></th>
+                                <th>sản phẩm</th>
+                                <th>giá</th>
+                                <th>số lượng</th>
+                                <th>tổng</th>
+                            </tr>
+                            <tr>
+                                <td><img class="" src="" alt="" /></td>
+                                <td><a class="">Bao da iPhone 5 5s J&C</a></td>
+                                <td>180.000</td>
+                                <td><a class="pro-btn minus">-</a>
+                                <input class="pro-num" type="text" value="1" />
+                                <a class="pro-btn plus">+</a></td>
+                                <td>180.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>
+                        <button type="submit" class="btn">Cập nhật giỏ hàng</button>
+                    </p>
+                    <h3 class="title-page">
+                        Đặt mua</h3>
+                    <p>
+                        Thực hiện thanh toán các phụ kiện đã lựa chọn, các ô có đánh dấu sao (*) là bắt
+                        buộc, quý khách vui lòng điền đầy đủ thông tin trước khi thanh toán.</p>
+                    <form class="order-form" role="form">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7 col-sm-7 col-xs-7">
+                                <div class="form-group">
+                                    <label for="name" class="required">Tên người nhận</label>
+                                    <input id="name" type="text" class="form-control" />
+                                </div>   
+                                <div class="form-group">
+                                    <label for="addrees" class="required">Địa chỉ</label>
+                                    <input id="address" type="text" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="required">Email</label>
+                                    <input id="email" type="email" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="required">Số điện thoại</label>
+                                    <input id="mobile" type="text" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="disc-code" class="">Mã giảm giá</label>
+                                    <input id="disc-code" type="text" class="form-control" />
                                 </div>
                             </div>
-                            <ul class="row list-thumb">
-                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="pro-img-link" href="#img1">
-                                    <img class="img-responsive pro-img-thumb" src="img/img-slide-show-thumb.jpg" alt="" /></a>
-                                </li>
-                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="pro-img-link" href="#img2">
-                                    <img class="img-responsive pro-img-thumb" src="img/img-slide-show-thumb.jpg" alt="" /></a>
-                                </li>
-                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="pro-img-link" href="#img3">
-                                    <img class="img-responsive pro-img-thumb" src="img/img-slide-show-thumb.jpg" alt="" /></a>
-                                </li>
-                            </ul>
+                            <div class="col-xs-5 col-md-5 col-sm-5 col-xs-5">
+                                <div class="form-group">
+                                    <label for="note" class="required">Ghi chú</label>
+                                    <textarea id="note" class="form-control" rows="16"></textarea>
+                                </div>  
+                            </div>
                         </div>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 pro-info">
-                            <h2 class="pro-name">Bao da iPhone</h2>
-                            <p class="pro-price"><span class="original-price with-discount">190.000<sup>đ</sup></span><span class="promo-price">190.000<sup>đ</sup></span></p>
-                            <p class="pro-intro">Bao da iPhone 4 được làm bằng chất liệu da cao cấp với thiết kế kiểu dáng gập ngang đẹp và thời trang, chống bám bẩn tốt.</p>
-                            <p class="pro-controls">
-                                <a class="pro-btn pro-btn-cal minus"></a>
-                                <input class="pro-num" type="text" value="1" />
-                                <a class="pro-btn pro-btn-cal plus"></a>
-                                <button class="pro-btn add-to-cart">
-                                    Thêm vào giỏ</button>
-                            </p>
-                            <p class="extra-info">
-                                Mã SKU: 144280075. Chuyên mục: <a class="tag" href="#">Apple</a><a class="tag" href="#">iPhone
-                                    4</a><a class="tag" href="#">iPhone 4s</a><a class="tag" href="#">J-C</a><a class="tag"
-                                        href="#">Phụ kiện di động</a><a class="tag" href="#">Thương hiệu</a><a class="tag"
-                                            href="#">Thẻ</a><a class="tag" href="#">bao da</a><a class="tag" href="#">bao da iphone
-                                                4 4s</a><a class="tag" href="#">bao da j&c</a><a class="tag" href="#">bao da j&c iphone
-                                                    4 4s</a><a class="tag" href="#">iphone 4 4s</a><a class="tag" href="#">phụ kiện</a><a
-                                                        class="tag" href="#">phụ kiện giá rẻ</a><a class="tag" href="#"> phukiengiare.vn</a></p>
-                        </div>
-                    </div>
-                    <h3 class="title-page">
-                        Mô tả sản phẩm</h3>
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pro-desc">
-                            <p>
-                                Bao da iPhone 4 4s J&C</p>
-                            <p>
-                                Được làm baaằng chất liệu da cao cấp với thiết kế kiểu dáng gập ngang đẹp và thời
-                                trang . Chất liệu da chống bám bẩn rất tốt, các đường vân khỏe khoắn, khá nhẹ nhưng
-                                lại rất chắc chắn. Các chi tiết được cắt gọt chính xác với độ thẩm mỹ cao.</p>
-                            <p>
-                                Với chất liệu da cao cấp, màu sắc hợp thời trang theo đúng xu hướng, phù hợp với
-                                mọi lứa tuổi nhưng không quên đi nét độc đáo của mình. Bao da iPhone 4 4s J&C chắc
-                                chắn sẽ làm bạn hài lòng khi sử dụng với 1 trong những dòng máy HOT nhất năm nay
-                                iPhone 4 4s.</p>
-                            <p>
-                                Màu: Vàng, Xanh, Đỏ, Trắng, Đen,…</p>
-                            <img src="img/pro-desc-img.jpg" alt="" />
-                            <img src="img/pro-desc-img2.jpg" alt="" />
-                            <img src="img/pro-desc-img3.jpg" alt="" />
-                        </div>
-                    </div>
+                        <p class="seperate-top">
+                            <button type="submit" class="btn">Thanh toán</button>
+                        </p>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 aside">
                     <div class="cate-box">

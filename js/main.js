@@ -12,4 +12,25 @@
         return false;
     });
 
+    // hide #back-top first
+    $("#scrollUp").hide();
+
+    // fade in #back-top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scrollUp').fadeIn();
+            } else {
+                $('#scrollUp').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#scrollUp').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
 });
