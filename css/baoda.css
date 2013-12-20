@@ -38,6 +38,10 @@ ul {
     position: relative;
 }
 
+.right-align {
+    text-align: right;
+}
+
 .pro-page-list {
     text-align: center;
 }
@@ -461,7 +465,6 @@ ul {
 
 /* Controls */
 
-
 .pro-btn {
     color: #fff;
     margin-right: 5px;
@@ -474,6 +477,7 @@ ul {
         height: 14px;
         overflow: hidden;
         text-indent: 100%;
+        vertical-align: middle;
         white-space: nowrap;
         width: 14px;
     }
@@ -511,12 +515,25 @@ ul {
 .pro-num {
     border: 1px solid #a1a1a1;
     color: #f77827;
+    font-size: 0.85em;
     height: 15px;
     line-height: 15px;
     margin-right: 5px;
     outline: none;
     text-align: center;
     width: 24px;
+}
+
+.cart-detail .add-to-cart {
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 15px;
 }
 
 
@@ -687,6 +704,7 @@ ul {
     -o-transition: -o-transform .5s ease 0s;
     -webkit-transition: -webkit-transform .5s ease 0s;
     transition: transform .5s ease 0s;
+    display: block;
 }
 
     .pro-list .phone-case:hover, .pro-list .phone-case:focus {
@@ -780,7 +798,6 @@ ul {
 }
 
 .pro-img-slideshow .pro-img {
-    height: 205px;
     left: 0;
     opacity: 0;
     margin: 0 auto;
@@ -793,7 +810,6 @@ ul {
     -webkit-transition: opacity .5s ease;
     transition: opacity .5s ease;
     top:10px;
-    width: 242px;
 }
 
 .pro-img-slideshow .pro-img:target {
@@ -869,16 +885,35 @@ ul {
     background-color: transparent;
 }
 
+.item-list .item-name {
+    color: #000;
+}
+
+.item-list .item-remove {
+    background: url(../img/icons.png) no-repeat -66px 0;
+    display: inline-block;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 14px;
+}
+
+.item-list th {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .item-list td:nth-child(1) {
-    width: 15%;
+    width: 20%;
 }
 
 .item-list td:nth-child(2) {
-    width: 30%;
+    width: 35%;
 }
 
 .item-list td:nth-child(3) {
-    width: 20%;
+    text-align: center;
+    width: 15%;
 }
 
 .item-list td:nth-child(4) {
@@ -886,7 +921,8 @@ ul {
 }
 
 .item-list td:nth-child(5) {
-    width: 20%;
+    text-align: center;
+    width: 15%;
 }
 
 .order-form {
